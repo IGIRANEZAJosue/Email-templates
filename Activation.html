@@ -31,7 +31,7 @@
                         Hi <span style="color: #002F4A; font-weight: bold;">@UserName</span>,
                         <br><br>
                         Welcome to <a href="#" style="color: #002F4A;text-decoration: none;font-family: 'lato', Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;" >
-                            SolveIt Cadet</a>
+                            {{ site_name }}</a>
                         <br>
                     </p>
 
@@ -47,7 +47,7 @@
                         Or click the link below to verify your email.
                     </p>
 
-                    <a href="#">
+                    <a href="{{ protocol }}://{{ domain }}/{{ url|safe }}">
                         <button style="padding: 12px 24px;
                         background-color: #002F4A;
                         border: solid #002F4A;
